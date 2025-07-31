@@ -1,33 +1,26 @@
+import java.util.*;
 public class Fcp017{
 public static void main(String[]args){
-int a=50;
-int b=10;
-int c=16;
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
+int max=0;
+int min=0;
 if(a>b){
-	if(a>c){
-		if(b>c){
-			System.out.println(b);
-			}
-		else{
-			System.out.println(c);
-		}
-		}
-	else{
-		System.out.println(a);
-	}
+max=a;
+min=b;
+}else{
+max=b;
+min=a;
 }
-else{
-	if(b>c){
-		if(a>c){
-			System.out.println(a);
-			}
-		else{
-			System.out.println(c);
-		}
-		}
-	else{
+if(max>c){
+	if(min>c){
+		System.out.println(min);
+	}else{
 		System.out.println(c);
 	}
+}else{
+	System.out.println(max);
 }
-}
-}
+}}
