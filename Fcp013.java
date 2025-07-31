@@ -1,6 +1,8 @@
+import java.util.*;
 public class Fcp013{
 public static void main(String[]args){
-int a=5;
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
 if(a%2==0){
 System.out.println(a);
 }
