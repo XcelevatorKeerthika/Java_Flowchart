@@ -1,9 +1,11 @@
+import java.util.*;
 public class Fcp015{
 public static void main(String[]args){
-int a=98;
-int b=13;
-int c=29;
-int d=58;
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
+int d=sc.nextInt();
 if(a>b){
 	if(a>c){
 		if(a>d){
